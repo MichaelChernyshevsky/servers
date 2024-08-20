@@ -1,0 +1,18 @@
+parameters:
+  - in: body
+    name: userGetInfoRequest
+    type: Object
+    schema:
+      $ref: "#/definitions/UserGetInfoRequest"
+responses:
+  "200":
+    description: "Send reset password link to user"
+  "404":
+    description: "Not found"
+definitions:
+  UserGetInfoRequest:
+    type: object
+    properties:
+      email:
+        type: string
+        example: ""

@@ -1,0 +1,18 @@
+parameters:
+  - in: body
+    name: sendResetLinkRequest
+    type: Object
+    schema:
+      $ref: "#/definitions/UserCreateRequest"
+responses:
+  "200":
+    description: "Send reset password link to user"
+  "404":
+    description: "Not found"
+definitions:
+  UserCreateRequest:
+    type: object
+    properties:
+      email:
+        type: string
+        example: ""

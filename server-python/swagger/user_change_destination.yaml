@@ -1,0 +1,18 @@
+parameters:
+  - in: body
+    name: userChangeDestination
+    type: Object
+    schema:
+      $ref: "#/definitions/UserChangeDestination"
+responses:
+  "200":
+    description: "Destination changed"
+  "404":
+    description: "Not found"
+definitions:
+  UserChangeDestination:
+    type: object
+    properties:
+      destination_id:
+        type: string
+        example: ""

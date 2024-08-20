@@ -1,0 +1,18 @@
+parameters:
+  - in: body
+    name: userUpdateImage
+    type: Object
+    schema:
+      $ref: "#/definitions/UserUpdateImage"
+responses:
+  "200":
+    description: "Destination changed"
+  "404":
+    description: "Not found"
+definitions:
+  UserUpdateImage:
+    type: object
+    properties:
+      base64Image:
+        type: string
+        example: ""

@@ -1,0 +1,18 @@
+parameters:
+  - in: body
+    name: userDeleteRequest
+    type: Object
+    schema:
+      $ref: "#/definitions/UserDeleteRequest"
+responses:
+  "200":
+    description: "Send reset password link to user"
+  "404":
+    description: "Not found"
+definitions:
+  UserDeleteRequest:
+    type: object
+    properties:
+      email:
+        type: string
+        example: ""
