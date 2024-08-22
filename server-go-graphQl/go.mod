@@ -1,4 +1,4 @@
-module server-go
+module server-go-graphQl
 
 go 1.21.1
 
